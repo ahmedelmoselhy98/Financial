@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">FinaConsult</string>
+    <string name="hint_password">كلمة المرور</string>
+    <string name="hint_email">البريد الاكترونى</string>
+    <string name="err_msg_email">ادخل بريد صالح</string>
+    <string name="err_msg_password">ادخل كلمة المرور</string>
+    <string name="err_msg_first_name">ادخل الاسم الاول</string>
+    <string name="err_msg_last_name">ادخل اسم العائلة</string>
+    <string name="err_msg_phone">ادخل الهاتف</string>
+    <string name="err_msg_income_value">ادخل قيمة الدخل الشهرى</string>
+    <string name="err_msg_income_date">ادخل ميعاد الدخل الشهرى</string>
+    <string name="btn_sign_in">تسجيل دخول</string>
+    <string name="btn_sign_up">حساب جديد</string>
+    <string name="tv_forget_password">نسيت كلمة المرور ؟</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="hint_firstName">الإسم الأول</string>
+    <string name="hint_lastName">الإسم الأخير</string>
+    <string name="hint_phone">رقم الهاتف</string>
+    <string name="hint_incomeValue">الدخل الشهري</string>
+    <string name="hint_incomeDate">ميعاد الدخل الشهري</string>
+    <string name="hint_price">السعر</string>
+    <string name="hint_add_item">إضافة</string>
+
+    <string-array name="withdrawCategory">
+        <item>سحب من المستحقات</item>
+        <item>سحب من النفقات</item>
+    </string-array>
+
+    <string-array name="mainCategory">
+        <item>البيت</item>
+        <item>انا</item>
+        <item>مطعم</item>
+        <item>سيارة</item>
+        <item>تعليم</item>
+        <item>ترفية</item>
+        <item>اجهزة</item>
+        <item>هدايا</item>
+        <item>الابناء</item>
+        <item>مناسبات</item>
+        <item>اشتراكات</item>
+        <item>خيرى</item>
+        <item>قرض</item>
+        <item>سفر</item>
+    </string-array>
+    <string-array name="restaurant">
+        <item>كوفى شوب</item>
+        <item>فطور</item>
+        <item>غداء</item>
+        <item>عشاء</item>
+        <item>حلويات</item>
+        <item>سحور</item>
+    </string-array>
+    <string-array name="me">
+        <item>صندل</item>
+        <item>حلاقة</item>
+        <item>فاتورة الجوال</item>
+        <item>ملابس</item>
+        <item>علاج</item>
+        <item>عطر</item>
+    </string-array>
+    <string-array name="home">
+        <item>انترنت</item>
+        <item>كهرباء</item>
+        <item>ماء</item>
+        <item>غاز</item>
+        <item>ايجار</item>
+        <item>مقاضى</item>
+        <item>اثاث</item>
+        <item>هاتف</item>
+        <item><صيانه></صيانه></item>
+    </string-array>
+</resources>

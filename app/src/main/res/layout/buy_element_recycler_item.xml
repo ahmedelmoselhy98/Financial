@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="1dp"
+    android:layoutDirection="rtl"
+    >
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/buy_element_imageview"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:src="@drawable/ic_date_range_black_24dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="مطعم"
+        android:paddingRight="4dp"
+        android:id="@+id/buy_element_textview"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical"
+        />
+</LinearLayout>
