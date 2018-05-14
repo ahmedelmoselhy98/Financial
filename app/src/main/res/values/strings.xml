@@ -4,11 +4,19 @@
     <string name="hint_email">البريد الاكترونى</string>
     <string name="err_msg_email">ادخل بريد صالح</string>
     <string name="err_msg_password">ادخل كلمة المرور</string>
+    <string name="err_msg_goal">ادخل الهدف</string>
+    <string name="err_msg_goal_Date">ادخل تاريج الهدف</string>
+    <string name="err_msg_goal_price">ادخل القمية الماليه</string>
+    <string name="err_msg_enter_expenses">ادخل النفقات</string>
+    <string name="err_msg_financialdues">ادخل المستحقات</string>
     <string name="err_msg_first_name">ادخل الاسم الاول</string>
     <string name="err_msg_last_name">ادخل اسم العائلة</string>
     <string name="err_msg_phone">ادخل الهاتف</string>
+    <string name="err_msg_phone1">رقم الهاتف يجب الا يقل عن 10 ارقام</string>
     <string name="err_msg_income_value">ادخل قيمة الدخل الشهرى</string>
     <string name="err_msg_income_date">ادخل ميعاد الدخل الشهرى</string>
+    <string name="err_msg_start_date">ادخل تاريخ البداية</string>
+    <string name="err_msg_end_date">ادخل تاريخ النهاية</string>
     <string name="btn_sign_in">تسجيل دخول</string>
     <string name="btn_sign_up">حساب جديد</string>
     <string name="tv_forget_password">نسيت كلمة المرور ؟</string>
@@ -21,26 +29,43 @@
     <string name="hint_incomeDate">ميعاد الدخل الشهري</string>
     <string name="hint_price">السعر</string>
     <string name="hint_add_item">إضافة</string>
+    <string name="btn_submit">دخول</string>
+    <string name="hint_financial_dues"> ادخل المستحقات الماليه بحد اقصى</string>
+    <string name="hint_expenses"> ادخل النفقات بحد اقصى</string>
+    <string name="hint_goal">ادخل الهدف</string>
+    <string name="hint_goal_price">ادخل القيمة المالية</string>
+    <string name="hint_goal_date">ادخل تاريخ الشراء</string>
+    <string name="btn_goal">استشارة مالية</string>
+    <string name="entrance_stats">احصائيات</string>
+    <string name="entrance_reports">طباعة تقرير</string>
+    <string name="entrance_home">الصفحة الرئيسية</string>
+    <string name="entrance_descounts">التخفيضات</string>
+    <string name="entrance_goal">استشارة مالية</string>
+    <string name="souq">25%</string>
+    <string name="discount1">البيالات والفناجيل - قصر الاوانى</string>
+    <string name="discount2">عروض بنده وهايبربنده</string>
+    <string name="discount3">موقع نمشى للازياء</string>
+    <string name="discount4">SHEIN</string>
+    <string name="discount5">HomeCentre</string>
+    <string name="jumia">Jumia.com</string>
 
     <string-array name="withdrawCategory">
+        <item>اختار نوع السحب</item>
         <item>سحب من المستحقات</item>
         <item>سحب من النفقات</item>
     </string-array>
-
     <string-array name="mainCategory">
-        <item>البيت</item>
-        <item>انا</item>
         <item>مطعم</item>
+        <item>انا</item>
+        <item>البيت</item>
         <item>سيارة</item>
         <item>تعليم</item>
         <item>ترفية</item>
         <item>اجهزة</item>
-        <item>هدايا</item>
         <item>الابناء</item>
         <item>مناسبات</item>
         <item>اشتراكات</item>
         <item>خيرى</item>
-        <item>قرض</item>
         <item>سفر</item>
     </string-array>
     <string-array name="restaurant">
@@ -58,6 +83,11 @@
         <item>ملابس</item>
         <item>علاج</item>
         <item>عطر</item>
+        <item>جزمة</item>
+        <item>نظارة</item>
+        <item>محفظة</item>
+        <item>شنطة</item>
+        <item>تصوير</item>
     </string-array>
     <string-array name="home">
         <item>انترنت</item>
@@ -68,6 +98,89 @@
         <item>مقاضى</item>
         <item>اثاث</item>
         <item>هاتف</item>
-        <item><صيانه></صيانه></item>
+        <item>ايجار</item>
+        <item>صيانة</item>
+    </string-array>
+    <string-array name="car">
+        <item>مخالفة</item>
+        <item>بنزنن</item>
+        <item>قسط</item>
+        <item>زيت</item>
+        <item>غسيل</item>
+        <item>قطع غيار</item>
+        <item>صيانة</item>
+        <item>اكسسوارات</item>
+        <item>ايجار</item>
+        <item>تأمين</item>
+        <item>رخصة قيادة</item>
+        <item>رخصة سير</item>
+    </string-array>
+    <string-array name="education">
+        <item>كتب</item>
+        <item>دورة</item>
+        <item>رسوم دراسية</item>
+        <item>تصوير مذكرات</item>
+        <item>اقلام</item>
+        <item>دفاتر</item>
+        <item>شنطة</item>
+    </string-array>
+    <string-array name="entertainment">
+        <item>تمشية</item>
+        <item>ملاهي</item>
+        <item>العاب</item>
+        <item>افلام</item>
+    </string-array>
+    <string-array name="devices">
+        <item>جوال</item>
+        <item>تابلت</item>
+        <item>كمبيوتر</item>
+        <item>طابعة</item>
+    </string-array>
+    <string-array name="mykids">
+        <item>ملابس</item>
+        <item>مصروف</item>
+        <item>علاج</item>
+        <item>العاب</item>
+        <item>ملاهي</item>
+        <item>مشتريات</item>
+        <item>حفائض</item>
+        <item>حليب</item>
+        <item>مستلزمات المدرسة</item>
+    </string-array>
+    <string-array name="occation">
+        <item>وليمة</item>
+        <item>عيدية</item>
+        <item>حفلة نجاح</item>
+    </string-array>
+    <string-array name="participate">
+        <item>نادى رياضي</item>
+        <item>قنوات</item>
+        <item>مجلة</item>
+        <item>جريدة</item>
+        <item>استضافة موقع</item>
+        <item>دومين</item>
+    </string-array>
+    <string-array name="charity">
+        <item>زكاة مال</item>
+        <item>زكاة فطر</item>
+        <item>اضحية</item>
+        <item>صدقة</item>
+        <item>بخشيش</item>
+        <item>تبرع</item>
+        <item>زكاة الانعام</item>
+        <item>زكاة الذهب</item>
+    </string-array>
+    <string-array name="travel">
+        <item>تذاكر</item>
+        <item>فندق</item>
+        <item>تاكسي</item>
+        <item>مترو</item>
+        <item>ايجار سيارة</item>
+        <item>تسوق</item>
+        <item>مطعم</item>
+        <item>كوفى شوب</item>
+        <item>سينما</item>
+        <item>هدايا</item>
+        <item>رسوم جواز السفر</item>
     </string-array>
 </resources>

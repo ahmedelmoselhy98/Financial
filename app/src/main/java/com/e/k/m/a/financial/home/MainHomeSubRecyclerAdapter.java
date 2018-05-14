@@ -9,29 +9,24 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.e.k.m.a.financial.R;
-import com.e.k.m.a.financial.models.MainHomeRecyclerViewModel;
+import com.e.k.m.a.financial.models.SubElementItem;
 
 import java.util.ArrayList;
-
-/**
- * Created by ahmedelmoselhy on 7/30/2017.
- */
 
 public class MainHomeSubRecyclerAdapter extends RecyclerView.Adapter<MainHomeSubRecyclerAdapter.RecyclerViewHolder>{
 
     private static int NUM_OF_ITEMS;
     private static Context mContext;
-    private ArrayList<MainHomeRecyclerViewModel> mainHomeRecyclerViewModel;
+    private ArrayList<SubElementItem> subElementItems;
 
     public MainHomeSubRecyclerAdapter(Context mContext) {
         this.mContext = mContext;
         NUM_OF_ITEMS = 5;
     }
 
-    public MainHomeSubRecyclerAdapter(Context mContext, ArrayList<MainHomeRecyclerViewModel> mainHomeRecyclerViewModel) {
+    public MainHomeSubRecyclerAdapter(Context mContext, ArrayList<SubElementItem> subElementItems) {
         this.mContext = mContext;
-        this.mainHomeRecyclerViewModel = mainHomeRecyclerViewModel;
-            NUM_OF_ITEMS = 5;
+        this.subElementItems = subElementItems;
     }
 
     @Override
@@ -60,27 +55,31 @@ public class MainHomeSubRecyclerAdapter extends RecyclerView.Adapter<MainHomeSub
 
     @Override
     public int getItemCount() {
-//        if (mainHomeRecyclerViewModel.size() >0){
-//            return mainHomeRecyclerViewModel.size();
-//        }else
+        if (subElementItems.size() >0){
+            return subElementItems.size();
+        }else
         return NUM_OF_ITEMS;
     }
 
     public class RecyclerViewHolder extends RecyclerView.ViewHolder{
         ImageView itemImage;
-        TextView itemKind,itemValue;
+        TextView itemKind,itemValue,itemKind2;
         public RecyclerViewHolder(View itemView) {
             super(itemView);
+
             itemImage = itemView.findViewById(R.id.main_home_sub_recycler_item_image);
             itemKind = itemView.findViewById(R.id.main_home_sub_recycler_item_kind);
+            itemKind2 = itemView.findViewById(R.id.main_home_sub_recycler_item_kind2);
             itemValue = itemView.findViewById(R.id.main_home_sub_recycler_item_value);
         }
 
         public void bind(int itemPosition){
-
+            if (subElementItems.size() >0){
+            itemKind.setText(subElementItems.get(itemPosition).getItemTitle());
+            itemKind2.setText(subElementItems.get(itemPosition).getKind());
+            itemValue.setText(String.valueOf(subElementItems.get(itemPosition).getItemPrice())+" RS");
         }
-
-
+        }
     }
 
 }

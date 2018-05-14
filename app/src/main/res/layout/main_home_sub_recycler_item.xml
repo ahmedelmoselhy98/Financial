@@ -37,6 +37,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="نفقات"
+            android:textSize="15sp"
+            android:id="@+id/main_home_sub_recycler_item_kind2"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/main_home_sub_recycler_item_value"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:id="@+id/main_home_sub_recycler_item_value"
             android:text="15"

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:id="@+id/activity_add_report"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.e.k.m.a.financial.RepotsActivity.AddReport">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="finconsult"
+        android:textSize="25dp"
+        android:padding="8sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:fontFamily="cursive"
+        />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_reports"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تقرير شهرى عن المصروفات الماليه ف الفتره"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_start_date"
+            android:textColorHint="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edt_start_date"
+                android:layout_width="match_parent"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="تاريخ البداية" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_end_date"
+            android:textColorHint="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edt_end_date"
+                android:layout_width="match_parent"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:editable="false"
+                android:focusable="false"
+                android:hint="تاريخ النهاية"
+                />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="عرض التقرير"
+        android:onClick="saveReport"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corner_tv_white"
+        android:id="@+id/btn_register_new_account"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="المستحقات : "
+            android:textSize="30sp"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:layout_gravity="center"
+            android:id="@+id/add_report_financial"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="النفقات : "
+            android:textSize="30sp"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:id="@+id/add_report_expenses"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layoutDirection="ltr"
+        android:layout_height="match_parent"
+android:id="@+id/report_recycler_view"
+        >
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -55,7 +55,9 @@ android:layout_centerVertical="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@android:color/white"
-            android:hint="@string/hint_password" />
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            />
     </android.support.design.widget.TextInputLayout>
 
 

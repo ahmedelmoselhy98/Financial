@@ -1,21 +1,19 @@
 package com.e.k.m.a.financial.buyelement;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.e.k.m.a.financial.R;
 import com.e.k.m.a.financial.home.MainHomeSubRecyclerAdapter;
 
 import java.util.ArrayList;
-
-/**
- * Created by ahmedelmoselhy on 7/30/2017.
- */
 
 public class BuyElementSubRecyclerAdapter extends RecyclerView.Adapter<BuyElementSubRecyclerAdapter.RecyclerViewHolder>{
     private RecyclerView subRecycler;
@@ -23,6 +21,7 @@ public class BuyElementSubRecyclerAdapter extends RecyclerView.Adapter<BuyElemen
     private static int NUM_OF_ITEMS;
     private static Context mContext;
     private ArrayList<String> arrayList;
+    public String category;
 
 //    public BuyElementMainRecyclerAdapter(Context mContext) {
 //        this.mContext = mContext;
@@ -30,9 +29,15 @@ public class BuyElementSubRecyclerAdapter extends RecyclerView.Adapter<BuyElemen
 //    }
 
     public BuyElementSubRecyclerAdapter(Context mContext, ArrayList<String> arrayList) {
-        this.mContext = mContext;
-        this.arrayList = arrayList;
+            this.mContext = mContext;
+            this.arrayList = arrayList;
             NUM_OF_ITEMS = arrayList.size();
+    }
+    public BuyElementSubRecyclerAdapter(Context mContext, ArrayList<String> arrayList,String category) {
+            this.mContext = mContext;
+            this.arrayList = arrayList;
+            NUM_OF_ITEMS = arrayList.size();
+            this.category = category;
     }
 
     @Override
@@ -52,7 +57,9 @@ public class BuyElementSubRecyclerAdapter extends RecyclerView.Adapter<BuyElemen
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                category = category + "/"+arrayList.get(position);
+                BuyElement.addItemBtn.setVisibility(View.VISIBLE);
+                BuyElement.priceTxt.setVisibility(View.VISIBLE);
             }
         });
     }
@@ -75,9 +82,9 @@ public class BuyElementSubRecyclerAdapter extends RecyclerView.Adapter<BuyElemen
         }
 
         public void bind(int itemPosition){
+//            categoryText.setText(category);
             itemName.setText(arrayList.get(itemPosition));
         }
-
 
     }
 }

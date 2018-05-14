@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DDDDDD"
-
     android:orientation="vertical"
     tools:context="com.e.k.m.a.financial.buyelement.BuyElement">
 
@@ -14,11 +13,11 @@
         android:id="@+id/spinner_withdraw_category"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:background="@color/colorPrimary"
+        android:background="@android:color/white"
         android:gravity="center"
+        android:layout_marginBottom="5dp"
         android:padding="8dp" />
-
+    +
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -31,7 +30,6 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:clipToPadding="false"
             android:scrollbars="vertical" />
@@ -42,7 +40,6 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:clipToPadding="false"
             android:scrollbars="vertical" />
@@ -68,6 +65,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:hint="@string/hint_price"
+                android:visibility="gone"
                 android:inputType="number"
                 android:textColor="@color/colorPrimary"
                 android:textColorHint="@color/colorPrimary" />
@@ -78,8 +76,10 @@
             android:layout_width="0dp"
             android:layout_weight="2"
             android:layout_height="match_parent"
+            android:visibility="gone"
             android:textColor="@android:color/white"
             android:background="@color/colorPrimary"
             android:text="@string/hint_add_item" />
     </LinearLayout>
+
 </LinearLayout>

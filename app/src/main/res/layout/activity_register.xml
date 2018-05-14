@@ -50,6 +50,7 @@
                 android:textColor="@android:color/white"
                 android:layout_height="wrap_content"
                 android:hint="@string/hint_password"
+                android:inputType="textPassword"
                 />
         </android.support.design.widget.TextInputLayout>
 
@@ -93,6 +94,7 @@
                 android:textColor="@android:color/white"
                 android:layout_height="wrap_content"
                 android:hint="@string/hint_phone"
+                android:maxLength="10"
                 android:textColorHint="@android:color/white"
                 android:inputType="phone" />
         </android.support.design.widget.TextInputLayout>
@@ -108,6 +110,7 @@
                 android:textColor="@android:color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="number"
                 android:hint="@string/hint_incomeValue" />
         </android.support.design.widget.TextInputLayout>
 
@@ -123,9 +126,11 @@
                 android:layout_width="match_parent"
                 android:textColor="@android:color/white"
                 android:layout_height="wrap_content"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
                 android:hint="@string/hint_incomeDate" />
         </android.support.design.widget.TextInputLayout>
-
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

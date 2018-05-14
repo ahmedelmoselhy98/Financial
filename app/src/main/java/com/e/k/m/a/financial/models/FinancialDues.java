@@ -1,8 +1,5 @@
 package com.e.k.m.a.financial.models;
 
-/**
- * Created by ahmedelmoselhy on 3/15/2018.
- */
 
 public class FinancialDues {
 

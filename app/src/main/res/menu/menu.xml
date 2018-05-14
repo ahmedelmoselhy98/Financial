@@ -5,7 +5,16 @@
     <item android:id="@+id/logout"
         android:title="Logout"
         app:showAsAction="never"
+        android:orderInCategory="2"
+        ></item>
+    <item android:id="@+id/updateSalary"
+        android:title="تعديل الرصيد"
+        app:showAsAction="never"
         android:orderInCategory="1"
         ></item>
-
+    <item android:id="@+id/calender_menu"
+        android:title="التقويم"
+        app:showAsAction="never"
+        android:orderInCategory="1"
+        ></item>
 </menu>

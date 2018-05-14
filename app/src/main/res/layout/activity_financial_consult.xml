@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layoutDirection="rtl"
+    tools:context="com.e.k.m.a.financial.FinancialConsultActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="FinConsult"
+        android:textSize="35sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="cursive"
+        />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_goal"
+        android:layout_width="match_parent"
+        android:textColorHint="@android:color/white"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edt_input_goal"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_goal" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        >
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_goal_date"
+            android:layout_width="wrap_content"
+            android:textColorHint="@android:color/white"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:visibility="gone"
+            >
+
+            <EditText
+                android:id="@+id/edt_goal_date"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_goal_date"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="45dp"
+            android:background="@android:color/white"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_goal_price"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@android:color/white"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_input_goal_price"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_goal_price" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_goal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_corner_tv_white"
+        android:id="@+id/btn_goal"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:padding="16dp"
+android:text="يتم حساب عدد الشهور لتحقيق الهدف عن طريق قسمة المبلغ الكلى للهدف على الرصيد الحالى من المدخرات"
+        android:textColor="@android:color/white"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:padding="16dp"
+        android:id="@+id/goal_result"
+        android:textColor="@android:color/white"
+        />
+
+
+</LinearLayout>

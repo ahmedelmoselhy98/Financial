@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.e.k.m.a.financial">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,10 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".registration.Login" />
-        <activity
-            android:name=".home.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".registration.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,10 +20,24 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".home.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".registration.RegisterActivity"
             android:label="@string/title_activity_register"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".buyelement.BuyElement"></activity>
+        <activity android:name=".buyelement.BuyElement" />
+        <activity android:name=".moneyQuantity.MonyQuantityActivity" />
+        <activity android:name=".FinancialConsultActivity" />
+        <activity android:name=".entrance.EntranceActivity" />
+        <activity android:name=".RepotsActivity.AddReport" />
+        <activity android:name=".discounts.DiscountsActivity" />
+        <activity android:name=".updatequantity.UpdateQuantaties" />
+        <activity android:name=".updatequantity.UpdateSubActivity" />
+        <activity
+            android:name=".stats.StatsActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".calendar.CalendarActivity"></activity>
     </application>
 
 </manifest>
