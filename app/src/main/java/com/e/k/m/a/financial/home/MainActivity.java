@@ -118,7 +118,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
     private String getCurrentMonth() {
         SimpleDateFormat dateFormat = new SimpleDateFormat("MMMM yyyy", new Locale("ar"));
         return dateFormat.format(Calendar.getInstance().getTime());
